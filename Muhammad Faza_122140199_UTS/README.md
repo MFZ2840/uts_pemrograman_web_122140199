@@ -6,8 +6,8 @@ Proyek ini adalah aplikasi React sederhana yang menampilkan daftar produk dari A
 
 - **Komponen Fungsional**: Terbagi menjadi komponen seperti `Header`, `Footer`, `ProductList`, `ProductItem`, `Home`, `ProductDetail`, dan `NotFound`.
 - **Props dan Prop Validation**: Komponen saling berkomunikasi menggunakan props dengan validasi menggunakan PropTypes.
-- **State Management**: Pengelolaan state lokal dan kompleks menggunakan `useState` dan `useReducer` (melalui custom hook `useFetch`).
-                        useReducer dipilih sebagai metode state management karena aplikasi ini memiliki state kompleks seperti loading, error, dan data yang saling terkait dan perlu dikelola secara terstruktur. Penggunaan useReducer memungkinkan pengelolaan logika transisi state yang lebih rapi dibanding useState, dan karena state ini bersifat lokal serta tidak digunakan secara global, maka penggunaan Context atau Redux tidak diperlukan.
+- **State Management**: Pengelolaan state lokal dan kompleks menggunakan `useReducer` (melalui custom hook `useFetch`).
+                        Saya memilih useReducer karena state yang dikelola dalam aplikasi ini memiliki struktur yang kompleks dan memerlukan transisi state yang terorganisir dengan baik. Penggunaan useReducer memungkinkan saya mendefinisikan aksi-aksi yang spesifik (seperti FETCH_INIT, FETCH_SUCCESS, dan FETCH_FAILURE) yang secara eksplisit mengatur perubahan state, sehingga logika pengelolaan state menjadi lebih jelas dan mudah dipelihara. Dengan demikian, useReducer menyediakan kerangka kerja yang tepat untuk menangani kondisi seperti loading, error, dan data secara terintegrasi, sesuai dengan kompleksitas kebutuhan aplikasi.
 - **Data Fetching**: Data produk diambil dari API (https://fakestoreapi.com/products) menggunakan fetch API dengan penanganan loading dan error.
 - **Routing**: Implementasi navigasi menggunakan React Router dengan dynamic route untuk detail produk dan halaman not found.
 - **Optimasi dengan Hooks**: Menggunakan `useEffect`, `useRef`, `useCallback`, dan `useMemo` untuk meningkatkan performa dan user experience.
