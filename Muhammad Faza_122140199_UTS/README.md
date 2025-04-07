@@ -28,44 +28,19 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini secara lokal:
 1. **Clone Repository dari GitHub**
 
    ```bash
-   git clone https://github.com/USERNAME/uts-react-app.git
+   git clone https://github.com/MFZ2840//uts_pemrograman_web_122140199.git
 
 2. **Masuk ke Folder Proyek**
+
     cd uts-react-app
 
 3. **Install Dependensi**
+    
     npm install
 
 ## Menjalankan Aplikasi
 
     npm start
-
-## Struktur Proyek
-uts-react-app/
-├── public/
-│   ├── index.html
-│   └── (file statis lainnya)
-├── src/
-│   ├── components/
-│   │   ├── Header.js
-│   │   ├── Footer.js
-│   │   ├── ProductList.js
-│   │   ├── ProductItem.js
-│   │   └── SearchBar.js
-│   ├── hooks/
-│   │   └── useFetch.js
-│   ├── pages/
-│   │   ├── Home.js
-│   │   ├── ProductDetail.js
-│   │   └── NotFound.js
-│   ├── App.js
-│   ├── App.css
-│   ├── index.js
-│   └── index.css
-├── .gitignore
-├── package.json
-├── package-lock.json
-└── README.md
 
 ## Testing (Opsional)
 
@@ -74,5 +49,6 @@ App.test.js
 setupTests.js
 
 Untuk menjalankan, cukup jalankan:
+
     npm test
 
